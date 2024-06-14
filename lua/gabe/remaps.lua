@@ -18,4 +18,6 @@ vim.keymap.set('v', '<leader>d', '\"_d')
 
 vim.keymap.set('i', '<C-c>', '<Esc>')
 vim.keymap.set('n', 'Q', 'nop')
+vim.keymap.set('n', '<C-o>', '<C-o>zz')
+vim.keymap.set('n', '<C-i>', '<C-i>zz')
 

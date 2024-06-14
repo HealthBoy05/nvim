@@ -12,7 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
-	{ "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 },
+    { 'folke/tokyonight.nvim' },
 	{ 'nvim-telescope/telescope.nvim', tag = '0.1.6',dependencies = { 'nvim-lua/plenary.nvim' } },
 	{ 'nvim-treesitter/nvim-treesitter' },
 	{ "ThePrimeagen/harpoon", branch = "harpoon2", dependencies = { "nvim-lua/plenary.nvim" } },
@@ -23,6 +23,10 @@ local plugins = {
 	{'hrsh7th/cmp-nvim-lsp'},
 	{'hrsh7th/nvim-cmp'},
 	{'L3MON4D3/LuaSnip'},
+    {'mfussenegger/nvim-dap'},
+    {'mfussenegger/nvim-dap-python'},
+    { "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 },
+    { "tpope/vim-fugitive" },
 }
 
 require("lazy").setup(plugins, opts)
